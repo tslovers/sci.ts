@@ -37,7 +37,7 @@ export function tpx(a: BitSet, b: BitSet, xFactor = 0.5): BitSet[] {
   const distance = Math.ceil(a.size * xFactor);
 
   for (let i = 0; i < distance; i++) {
-    let bit = (x + i) % a.size;
+    const bit = (x + i) % a.size;
     ab.set(bit, b.get(bit));
     ba.set(bit, a.get(bit));
   }

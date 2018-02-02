@@ -51,7 +51,7 @@ would be very welcome.
 
 [build-image]: https://img.shields.io/travis/tslovers/sci.ts.svg
 [build-url]: https://travis-ci.org/trslovers/sci.ts
-
+  
 [license-image]: https://img.shields.io/github/license/tslovers/sci.ts.svg
 [license-url]: https://github.com/tslovers/sci.ts/blob/master/LICENSE
 
