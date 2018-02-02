@@ -3,8 +3,14 @@
   "version": "0.0.0",
   "description": "Science TypeScript Library",
   "main": "lib/sci.js",
+  "types": "types/sci.d.ts",
   "scripts": {
-    "test": "mocha -r ts-node/register test/*.ts test/**/*.ts"
+    "test": "mocha -r ts-node/register test/*.ts test/**/*.ts",
+    "prepare": "gulp",
+    "lint": "gulp lint",
+    "build": "gulp",
+    "watch": "gulp watch",
+    "gulp": "gulp"
   },
   "repository": {
     "type": "git",
@@ -38,6 +44,8 @@
     "webpack-stream": "^4.0.0"
   },
   "dependencies": {
-    "debug": "^3.1.0"
+    "cli-progress": "^1.7.0",
+    "debug": "^3.1.0",
+    "std.ts": "0.0.15"
   }
 }

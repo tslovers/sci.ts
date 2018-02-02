@@ -15,7 +15,9 @@
  * limitations under the License.
  */
 
-describe('maths.ts', () => {
+import * as sci from '../src/sci';
+
+describe('sci.ts', () => {
   it('It works!', () => {
     // In this section you may put some test to the code for extra
     // features you may be testing. This is for the annoyance of
@@ -24,4 +26,3 @@ describe('maths.ts', () => {
     // debugging new features.
   });
 });
-

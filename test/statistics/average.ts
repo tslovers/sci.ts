@@ -15,14 +15,16 @@
  * limitations under the License.
  */
 
-import {NPProblem} from './metaheuristics/NPProblem';
-import * as metaheuristics from './metaheuristics';
-import * as statistics from './statistics';
-import * as discrete from './discrete';
+import * as sci from '../../src/sci';
+import {expect} from 'chai';
 
-export {
-  discrete,
-  metaheuristics,
-  NPProblem,
-  statistics
-};
+describe('statistics::avg', () => {
+  it('should get average', () => {
+    const array = [0, 1, 2, 3, 4];
+    expect(sci.statistics.avg(array)).to.equals(2);
+    array.push(-1, 5);
+    expect(sci.statistics.avg(array)).to.equals(2);
+    array.push(6, 7);
+    expect(sci.statistics.avg(array)).to.equals(3);
+  });
+});

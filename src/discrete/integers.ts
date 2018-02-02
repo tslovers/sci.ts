@@ -15,14 +15,27 @@
  * limitations under the License.
  */
 
-import {NPProblem} from './metaheuristics/NPProblem';
-import * as metaheuristics from './metaheuristics';
-import * as statistics from './statistics';
-import * as discrete from './discrete';
+/**
+ * Generates a random integer in the range [lb, up).
+ * @param lb The lower bound.
+ * @param ub The upper bound.
+ * @returns A random integer between lb and ub.
+ */
+export function randInt(lb: number, ub: number): number {
+  return Math.floor(Math.random() * (ub - lb)) + lb;
+}
 
-export {
-  discrete,
-  metaheuristics,
-  NPProblem,
-  statistics
-};
+/**
+ * Calculates the factorial of a given number.
+ * @param n The number from which to calculate factorial.
+ * @returns n!
+ */
+export function factorial(n: number): number {
+  let a = 1;
+
+  for (let i = 2; i <= n; i++) {
+    a *= i;
+  }
+
+  return a;
+}

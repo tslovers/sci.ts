@@ -15,14 +15,6 @@
  * limitations under the License.
  */
 
-import {NPProblem} from './metaheuristics/NPProblem';
-import * as metaheuristics from './metaheuristics';
-import * as statistics from './statistics';
-import * as discrete from './discrete';
-
-export {
-  discrete,
-  metaheuristics,
-  NPProblem,
-  statistics
-};
+export function avg(array: number[]) {
+  return array.reduce((prev, cur) => prev + cur) / array.length;
+}

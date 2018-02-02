@@ -15,14 +15,5 @@
  * limitations under the License.
  */
 
-import {NPProblem} from './metaheuristics/NPProblem';
-import * as metaheuristics from './metaheuristics';
-import * as statistics from './statistics';
-import * as discrete from './discrete';
-
-export {
-  discrete,
-  metaheuristics,
-  NPProblem,
-  statistics
-};
+export * from './NPProblem';
+export * from './ga';
